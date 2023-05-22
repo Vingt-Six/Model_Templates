@@ -1,0 +1,10 @@
+{% extends 'intromodel/base.html' %}
+
+{% block content %}
+<h1>Je suis la page Product</h1>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
